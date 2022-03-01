@@ -21,7 +21,7 @@ public class SelectWithParameter {
         return conn;
     }
 
-    public void selectAll(){
+    public void selectParticularMovie(){
         String sql = "SELECT moviename,Actor,Actress,yearofrelease,director FROM moviesdata where Actor='Ajith Kumar'";
         try (Connection conn = this.connect();
              Statement stmt  = conn.createStatement();
@@ -42,7 +42,7 @@ public class SelectWithParameter {
     }
     public static void main(String[] args) {
         SelectWithParameter app = new SelectWithParameter();
-        app.selectAll();
+        app.selectParticularMovie();
     }
 
 }
