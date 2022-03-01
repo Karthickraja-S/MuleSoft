@@ -7,10 +7,6 @@ import java.sql.Statement;
 
 public class CreateTable {
 
-    /**
-     * Create a new table in the test database
-     *
-     */
     public static void createNewTable() {
         // SQLite connection string
         String url = "jdbc:sqlite:C://sqlite/db/moviesdatas.db";
@@ -33,9 +29,7 @@ public class CreateTable {
         }
     }
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
         createNewTable();
     }
